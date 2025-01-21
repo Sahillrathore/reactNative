@@ -19,19 +19,19 @@ const products = [
         id: '2',
         name: 'Smart Watch',
         price: 129.99,
-        image: '@/assets/images/heart.png',
+        image: require('@/assets/images/thumb.png'),
     },
     {
         id: '3',
         name: 'Gaming Mouse',
         price: 39.99,
-        image: '@/assets/images/heart.png',
+        image: require('@/assets/images/thumb.png'),
     },
     {
         id: '4',
         name: 'Bluetooth Speaker',
         price: 49.99,
-        image: '@/assets/images/heart.png',
+        image: require('@/assets/images/thumb.png'),
     },
 ];
 
@@ -42,7 +42,7 @@ export default function ProductList() {
 
     const renderProduct = ({ item }) => (
         <View style={styles.card}>
-            <Image source={{ uri: item.image }} style={styles.image} />
+            <Image source={item.image} style={styles.image} />
             <Text style={styles.productName}>{item.name}</Text>
             <Text style={styles.price}>${item.price.toFixed(2)}</Text>
             <TouchableOpacity
