@@ -13,7 +13,7 @@ const products = [
         id: '1',
         name: 'Wireless Headphones',
         price: 59.99,
-        image: ('../../assets/images/heart.png'),
+        image: require('@/assets/images/thumb.png'),
     },
     {
         id: '2',
