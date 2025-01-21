@@ -76,7 +76,7 @@ export default function ContactPage() {
           </TouchableOpacity>
           <TouchableOpacity onPress={() => handleLinkPress('https://instagram.com')}>
             <Image
-              source={require('@/assets/images/heart.png')}
+              source={require('@/assets/images/thumb.png')}
               style={styles.socialIcon}
             />
           </TouchableOpacity>
