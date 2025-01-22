@@ -2,24 +2,13 @@ import { View, Text, StyleSheet, ImageBackground, Pressable } from 'react-native
 import React from 'react'
 import bgImage from '@/assets/images/loginbg.png';
 import { Link } from 'expo-router';
+import Users from '../home';
+import Home from '../home';
 
 const app = () => {
   return (
     <View style={styles.container}>
-      <ImageBackground
-        source={bgImage}
-        resizeMode='cover'
-        style={styles.img}
-      >
-        <Text style={styles.text}>App Component</Text>
-
-        <Link href='contact' style={{marginHorizontal: 'auto'}} asChild>
-          <Pressable style={styles.button}>
-            <Text style={styles.buttonText}>Explore</Text>
-          </Pressable>
-        </Link>
-
-      </ImageBackground>
+      <Home/>
     </View>
   )
 }

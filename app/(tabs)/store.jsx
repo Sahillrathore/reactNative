@@ -33,6 +33,30 @@ const products = [
         price: 49.99,
         image: require('@/assets/images/thumb.png'),
     },
+    {
+        id: '5',
+        name: 'Gaming Mouse',
+        price: 39.99,
+        image: require('@/assets/images/thumb.png'),
+    },
+    {
+        id: '6',
+        name: 'Bluetooth Speaker',
+        price: 49.99,
+        image: require('@/assets/images/thumb.png'),
+    },
+    {
+        id: '7',
+        name: 'Gaming Mouse',
+        price: 39.99,
+        image: require('@/assets/images/thumb.png'),
+    },
+    {
+        id: '8',
+        name: 'Bluetooth Speaker',
+        price: 49.99,
+        image: require('@/assets/images/thumb.png'),
+    },
 ];
 
 export default function ProductList() {
@@ -62,6 +86,7 @@ export default function ProductList() {
                 renderItem={renderProduct}
                 keyExtractor={(item) => item.id}
                 contentContainerStyle={styles.list}
+                numColumns={2} // Display two cards in a row
             />
         </View>
     );
@@ -88,15 +113,17 @@ const styles = StyleSheet.create({
         borderRadius: 8,
         padding: 16,
         marginBottom: 16,
+        marginHorizontal: 8, // Adds space between cards
         shadowColor: '#000',
         shadowOpacity: 0.1,
         shadowRadius: 4,
         shadowOffset: { width: 0, height: 2 },
         elevation: 2,
         alignItems: 'center',
+        flex: 1, // Ensure each card takes up equal space
     },
     image: {
-        width: 150,
+        width: '100%',
         height: 150,
         marginBottom: 8,
         borderRadius: 8,
